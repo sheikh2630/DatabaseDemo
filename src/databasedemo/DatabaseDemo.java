@@ -16,6 +16,8 @@ public class DatabaseDemo {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        JdbcDemo JD = new JdbcDemo();
+        
     }
     
 }

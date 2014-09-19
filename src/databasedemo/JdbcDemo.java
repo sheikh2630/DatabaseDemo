@@ -12,8 +12,8 @@ import java.util.logging.Logger;
 
 public class JdbcDemo {
 
-    public static final String userName = "cphua20";
-    public static final String pw = "cphua20";
+    public static final String userName = "cphba83";
+    public static final String pw = "cphba83";
     public static final String dbms = "oracle";
     static final String driverDerby = "org.apache.derby.jdbc.EmbeddedDriver";
     static final String driverOracle = "oracle.jdbc.driver.OracleDriver";
@@ -40,7 +40,7 @@ public class JdbcDemo {
             ResultSet rs = stmt.getResultSet();
             while (rs.next()) {
                 System.out.println("Id:" + rs.getInt(1) + ", " + rs.getString("FIRST_NAME") + ", "
-                        + rs.getString("LAST_NAME"));
+                        + rs.getString("LAST_NAME") + ", " + rs.getInt("PHONE_NUMBER"));
             }
         }
     }
